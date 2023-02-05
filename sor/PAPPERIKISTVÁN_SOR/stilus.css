@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    background-image: url(/design/teglafal.jpg);
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    'h'
+    'd'
+    'f'
+    ;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+header{
+    grid-area: h;
+    background-image: url(/design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size: cover;
+    font-weight: bold;
+    font-family: Garamond;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+header h3{
+    background-image: none;
+    text-transform: uppercase;
+}
+
+nav {
+    grid-area: n;
+    background-image: none;
+    background-color: gray;
+    padding-top: 1px;
+}
+
+nav ul{
+    background-image: none;
+    background-color: gray;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+nav li{
+    list-style: none;
+    border: 1px solid white;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: none;
+    background-color: gray;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    
+}
+
+nav li:hover {
+    background-color: red;
+}
+
+nav li a{
+    background-color: gray;
+    background-image: none;
+
+}
+
+nav li a:hover{
+    background-color: gray;
+    background-image: none;
+    background-color: red;
+}
+
+article{
+    grid-area: a;
+    background-image: none;
+    background-color: black;
+}
+
+article p{
+    text-align: justify;
+    font-size: 10px;
+    background-image: none;
+    background-color: black;
+}
+
+article h2{
+    font-size: 15px;
+    background-image: none;
+    background-color: black;
+}
+
+article img{
+    float: left;
+    width: 20%;
+    border: 1px solid grey;
+    padding: 5px;
+    background-image: none;
+    background-color: black;
+}
+
+article ul{
+    background-image: none;
+    background-color: black;
+}
+
+article ul li{
+    list-style: square;
+    background-image: none;
+    background-color: black;
+}
+
+div{
+    grid-area: d;
+    display: grid;
+    grid-template-areas: 
+    'a n'
+    ;
+    grid-template-columns: 70% 30%;
+    background-image: none;
+    background-color: black;
+}
+
+div article li{
+    background-color: black;
+}
+
+div article ul li{
+    background-color: black;
+}
+
+footer{
+    grid-area: f;
+    background-image: none;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+footer p{
+    background-image: none;
+    background-color: gray;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+      display: block;
+    }
+
+    div{
+        display: block;
+    }
+  }
